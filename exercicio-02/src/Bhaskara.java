@@ -8,21 +8,21 @@ public class Bhaskara {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Coeficiente a: ");
-        double a = sc.nextDouble();
+        double x = sc.nextDouble();
 
         System.out.print("Coeficiente b: ");
-        double b = sc.nextDouble();
+        double y = sc.nextDouble();
 
         System.out.print("Coeficiente c: ");
-        double c = sc.nextDouble();
+        double z = sc.nextDouble();
 
-        double delta = b * b - 4 * a * c;
+        double delta = y * y - 4 * x * z;
 
         if (delta < 0) {
             System.out.println("Esta equacao nao possui raizes reais");
         } else {
-            double x1 = (-b + Math.sqrt(delta)) / (2 * a);
-            double x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            double x1 = (-y + Math.sqrt(delta)) / (2 * x);
+            double x2 = (-y - Math.sqrt(delta)) / (2 * x);
 
             System.out.printf("X1 = %.4f%n", x1);
             System.out.printf("X2 = %.4f%n", x2);
